@@ -77,63 +77,62 @@
 /* Navbar */
 
 .div1 .nav_bar1{
-  margin-left: 0%;
-  margin-top: 1rem;
-}
-.div1 .nav_bar1 .nav-links{
-  background-color: #fff;
-  margin-left: 0%;
+    margin-left: 0%;
+    margin-top: 1rem;
+  }
+  .div1 .nav_bar1 .nav-links{
+    background-color: #fff;
+    margin-left: 0%;
+    
+  }
   
-}
-
-.div1 .nav_bar1 .nav-links li a {
-  color: rgb(8, 28, 61);
+  .div1 .nav_bar1 .nav-links li a {
+    color: rgb(8, 28, 61);
+    
+  }
   
-}
-
-
-/* 
-.main{
-  display: inline-block;
-} 
-*/
-
-.tab-content {
-  display: none;
-}
-
-.tab-content.active-tab {
-  display: block;
-} 
-
-
-/* card */
-.div5{
-  display: flex;
-  flex-wrap: wrap;
   
-  justify-content: space-evenly;
-}
-
-
-#div1{
-  flex-wrap: wrap;
-}
-
-.card{
-  margin-block: 2rem;
-  border-radius: 10px;
-  border: none;
-}
-
-.card-img-top{
-  height: 13rem;
-}
-
-table{
-  width: 100%;
-}
-
+  /* 
+  .main{
+    display: inline-block;
+  } 
+  */
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active-tab {
+    display: block;
+  } 
+  
+  
+  /* card */
+  .div5{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+  }
+  
+  
+  #div1{
+    flex-wrap: wrap;
+  }
+  
+  .card{
+    margin-block: 2rem;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .card-img-top{
+    height: 13rem;
+  }
+  
+  table{
+    width: 100%;
+  }
 /* footer */
 #servheadf{
   height: 20vh;
@@ -181,6 +180,216 @@ footer{
   }
 
   
+  
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  #servheadf{
+    height: 12vh;
+    
+  }
+  
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+#servheadf{
+  height: 12vh;
+  
+}
+}
+
+
+
+/* Warehouse */
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active-tab {
+  display: block;
+} 
+
+
+/* card */
+.div5{
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: space-evenly;
+}
+
+
+#div1{
+  flex-wrap: wrap;
+}
+
+.card{
+  margin-block: 2rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.card-img-top{
+  height: 13rem;
+}
+
+table{
+  width: 100%;
+}
+
+/* dropdown */
+ul,li{
+    margin: 0;
+    padding: 0;
+  }
+  .main2{
+    position:absolute;
+    z-index:1;
+    
+    
+  }
+  .main2 li{
+    list-style:none;
+    background: #fd5b17;
+    width: 14rem;
+    padding: 0 0.5rem;
+    margin: 0;
+    height: 3rem;
+    line-height: 3rem; 
+    transition: all .5s ease-in-out;
+    opacity: 0.9;
+    
+  }
+  
+  .main2 li:nth-child(odd){
+    
+    transform-origin: top;
+    transform: perspective(35rem) rotateX(-90deg);
+  }
+  
+  .main2 li:nth-child(even){
+     margin-top:-65px;
+    transform-origin: bottom;
+    transform: perspective(35rem) rotateX(90deg);
+  }
+  
+  
+  .hov:hover li:nth-child(odd){
+    transform-origin: top;
+    transform: perspective(35rem) rotateX(0deg);
+    margin-top:0;
+  }
+  
+  .hov:hover li:nth-child(even){
+    transform-origin: bottom;
+    transform: perspective(35rem) rotateX(0deg);
+     margin-top:0;
+  }
+  
+  .main2 li:first-child{
+    margin-top:0;
+  }
+  
+  .hov{
+    position:relative;
+    height: 3rem;
+    width:14rem;
+    background: rgb(8, 28, 61);
+    color: white;
+    font-size: 1rem;
+    font-family: Helvetica;
+    font-weight:bold;
+    text-align: center;
+    line-height: 3rem;
+    list-style:none;
+    z-index:2;
+    margin-left: 2rem;
+    cursor: pointer;
+    
+  }
+  
+  .hov .main2 li{
+    cursor: pointer;
+  }
+  
+  #div1{
+   flex-wrap: wrap;
+    /* flex-direction: row; */
+    
+  }
+  .div5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active-tab {
+    display: block;
+  }
+  
+  table{
+    width: 100%;
+  }
+   .card{
+    margin-block: 2rem;
+    
+  }
+  table tr td{
+    color: rgb(99, 99, 99);
+  }
+  .card-title{
+    font-size: 20px;
+  }
+/* footer */
+#servheadf{
+  height: 20vh;
+  background: linear-gradient(
+      rgba(8, 28, 61, 0.9),
+      rgba(8, 28, 61, 0.9)
+    ),
+    url("../../assets/images/heading.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: 5em;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer{
+  width: 100%;
+  padding: 2em;
+}
+
+.footer_text{
+  width: 80%;
+
+}
+.footer_icon{
+  width: 19%;
+  text-align: right;
+
+}
+
+@media screen and (max-width: 600px) {
+  #servheadf{
+    height: 10vh;
+    
+  }
+  .footer_text p{
+    font-size: 10px;
+  }
+
+  .footer_icon img{
+    width: 1em;
+  } 
   
 }
 @media screen and (max-width: 900px) and (min-width: 600px) {
