@@ -1,843 +1,843 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "poppins" sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins" sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav_bar {
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  /* background: #c1f7f5; */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  background: rgb(8, 28, 61);
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0 12px;
+}
+
+.nav-links li a {
+  position: relative;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.6rem 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-links li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.3rem;
+  width: 0%;
+  background: #fd5b17;
+  border-radius: 1.2rem;
+  transition: all 0.4s ease;
+}
+
+.nav-links li a:hover:before {
+  width: 100%;
+}
+
+.nav-links li.center a:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links li.upward a:before {
+  width: 100%;
+  bottom: -0.5rem;
+  opacity: 0;
+}
+
+.nav-links li.upward a:hover:before {
+  bottom: 0rem;
+  opacity: 1;
+}
+
+
+/* .horizontal-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    background-color: red;
+    padding: 1rem;
+}
+
+.horizontal-panel a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+} */
+
+.main {
+  /* display: inline-block; */
+  top: 2rem;
+  width: auto;
+
+}
+
+.func-1 {
+  /* width: 100%; */
+  margin-bottom: 2rem;
+  height: 55rem;
+
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active-tab {
+  display: block;
+}
+
+
+
+/* payment */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body{
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #484848;
+  background-color: #f9f5f5;
+} */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+strong {
+  font-weight: 800;
+}
+
+.container {
+  /* margin-top:. 5em; */
+  border-radius: 1.8em;
+  padding: 2em 2em;
+  background-color: white;
+}
+
+header {
+  margin-bottom: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo strong {
+  color: #fd5b17;
+}
+
+header .time-left {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  line-height: 1.2;
+}
+
+.payment,
+.payment :where(form > div:not(.card-number), .card-expiration .input) {
+  display: flex;
+  align-items: center;
+}
+
+.payment {
+  flex-direction: column-reverse;
+  gap: 4em;
+}
+
+.payment form>div {
+  margin-bottom: 2.5em;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.payment form>div:not(.card-number)>div {
+  flex: 1 0 50%;
+  margin: 0.5em 0;
+}
+
+.payment .left p {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.payment .left span {
+  color: #a1a1a1;
+  font-size: 1.3rem;
+}
+
+.payment .left input {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0 1em;
+  line-height: 46px;
+  border-radius: 8px;
+  width: 100%;
+  border: 2px solid #a1a1a1;
+  outline-color: transparent;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.payment .left input::placeholder {
+  font-weight: 300;
+  font-family: inherit;
+  letter-spacing: 2px;
+  color: #a1a1a1;
+  font-size: 1.3rem;
+  opacity: .5;
+}
+
+.payment .left input:focus {
+  outline-color: #fd5b17;
+  background-color: #f5f5f5;
+}
+
+.payment .card-number-box {
+  position: relative;
+  margin-top: 1em;
+}
+
+.payment .card-number-box input {
+  padding: 0 4em;
+}
+
+.payment .card-number-box input::placeholder {
+  font-size: inherit;
+}
+
+.payment form .cc-logo {
+  position: absolute;
+  top: 50%;
+  left: 1.2em;
+  margin-top: -10px;
+}
+
+.payment .cc-logo::before,
+.payment .cc-logo::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e51212;
+}
+
+.payment .cc-logo::after {
+  background-color: #f79e1c;
+  margin-left: -7px;
+  opacity: 0.75;
+
+}
+
+.payment .card-expiration .input {
+  gap: 10%;
+  text-align: center;
+}
+
+.payment .card-expiration input {
+  text-align: center;
+}
+
+.card-expiration strong {
+  font-size: 2rem;
+}
+
+.payment form button {
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: 0;
+  background-color: #fd5b17;
+  color: white;
+  line-height: 56px;
+  border-radius: 8px;
+  width: 100%;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.payment form button:hover {
+  background-color: #e84f0e;
+}
+
+
+#brand {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+#brand span {
+  color: #fd5b17;
+}
+
+
+
+
+.payment .right {
+  max-width: 300px;
+  width: 100%;
+}
+
+.payment .card-virtual {
+  position: relative;
+  margin: 0 2em .5em;
+  padding: 2em;
+  line-height: 2em;
+  font-size: larger;
+  font-weight: 600;
+  color: white;
+  background-color: #00122c;
+  border-radius: 10px;
+  box-shadow: rgb(43 45 66 / 30%) 0 20px 30px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.payment .card-virtual .cc-logo {
+  position: relative;
+  transform: scale(5);
+  text-align: center;
+}
+
+.payment .card-virtual .name-holder {
+  margin: 4em 0 0;
+}
+
+.payment .chip {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0 -1.5em -1.5em;
+  opacity: .5;
+}
+
+.payment .chip img {
+  width: 30px;
+  margin-top: 0.5em;
+}
+
+.payment .card-virtual .highlight {
+  position: relative;
+  height: auto;
+  margin: 2em -2em -2em;
+  background-color: #8d99ab;
+  border-radius: 0 0 10px 10px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.payment .right .receipt {
+  position: relative;
+  padding: 2em 2em 2em;
+  border-radius: 10px;
+  background-color: aliceblue;
+  font-size: 1.2rem;
+}
+
+.payment .right .receipt ul li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 3em;
+  border-bottom: 2px solid #7a7a7a;
+}
+
+.payment .right .receipt ul li span:first-child {
+  color: #a1a1a1;
+}
+
+.payment .right .receipt ul li span:last-child {
+  font-weight: 700;
+}
+
+.payment .right .receipt .total {
+  text-align: right;
+  margin-top: 1em;
+}
+
+.payment .receipt .total .price {
+  font-size: 1.5em;
+}
+
+
+@media screen and (min-width: 576px) {
+  .outer {
+    padding: 4em;
   }
+
+  .payment form>div {
+    flex-direction: row;
+  }
+
+  .payment form>div .text {
+    padding-right: 1em;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    max-width: 70%;
+    padding-right: 4em;
+    margin-bottom: 0;
+  }
+
+  .payment {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .payment .left {
+    flex: 1 0 65%;
+    padding-right: 4em;
+  }
+
+  .payment .right {
+    flex: 1 0 35%;
+    align-self: flex-end;
+  }
+
+
+}
+
+
+/* Shipment */
+
+.title-div {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title-div span {
+  border-bottom: 4px solid #fd5b17;
+  display: inline-block;
+  padding-bottom: .5rem;
+}
+
+.ship form>div {
+  margin-bottom: 2.5em;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.ship,
+.ship :where(form > div:not(.name)) {
+  display: flex;
+  align-items: center;
+}
+
+
+.ship form {
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgb(222, 222, 222);
+  padding: 4rem;
+}
+
+.ship {
+  flex-direction: column-reverse;
+  gap: 4em;
+}
+
+.ship form {
+  min-width: 70%;
+}
+
+.ship form>div {
+  margin-bottom: 2.5em;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.ship .name input {
+  width: 100%;
+}
+
+.ship input::placeholder {
+  font-weight: 300;
+  font-family: inherit;
+  letter-spacing: 2px;
+  color: #a1a1a1;
+  font-size: 1.3rem;
+  opacity: .5;
+}
+
+.ship form>div:not(.name)>div {
+  flex: 1 0 50%;
+  margin: 0.5em 0;
+}
+
+.ship form .org-name {
+  margin-bottom: 1rem;
+}
+
+.ship label {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.ship input {
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 0 1em;
+  line-height: 46px;
+  border-radius: 8px;
+  width: 100%;
+  border: 2px solid #a1a1a1;
+  outline-color: transparent;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.ship select {
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 0 1em;
+  line-height: 46x;
+  border-radius: 8px;
+  width: 100%;
+  height: 5rem;
+  border: 2px solid #a1a1a1;
+  outline-color: transparent;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.ship input:focus {
+  outline-color: #fd5b17;
+  background-color: #f5f5f5;
+}
+
+.ship select:focus {
+  outline-color: #fd5b17;
+  background-color: #f5f5f5;
+}
+
+.ship span {
+  color: #a1a1a1;
+  font-size: 1.3rem;
+}
+
+.ship .button .submit,
+.reset,
+.proceed {
+  gap: 10%;
+  text-align: center;
+}
+
+select {
+  height: 2rem;
+}
+
+.ship form .button .submit,
+.reset,
+.proceed {
+  display: block;
+  width: auto;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+.ship form .button button {
+  font-size: 1.8rem;
+  width: 98%;
+  font-weight: 600;
+  border: 0;
+  background-color: #fd5b17;
+  color: white;
+  line-height: 50px;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+
+}
+
+.proceed button {
+  font-size: 1.8rem;
+  width: 100%;
+  font-weight: 600;
+  border: 0;
+  background-color: #fd5b17;
+  color: white;
+  line-height: 50px;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+
+
+
+
+.order-card {
+  max-width: 70%;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #dedede;
+  padding: 3rem;
+  margin: auto;
+  margin-top: 1rem;
+  border-bottom: 4px solid #fd5b17;
+}
+
+#orderCards h3 {
+  font-size: 1.9rem;
+  padding-bottom: .5rem;
+}
+
+#orderCards strong {
+  font-weight: 600;
+}
+
+#orderCards p {
+  padding-bottom: .5rem;
+  font-size: 1.3rem;
+}
+
+#orderCards table {
+  min-width: 22rem;
+}
+
+
+/* invoice */
+.invoice {
+  width: 80%;
+  padding: 4rem;
+  margin: auto;
+  box-shadow: 0 0 10px #dedede;
+}
+
+#orderDetailsContainer :not(p){
+  text-align: center;
+  width: 100%;
+}
+
+#orderDetailsContainer span{
+  font-weight: bolder;
+  border-bottom: 4px solid #fd5b17;
+  /* display: inline-block; */
+  padding-bottom: .5rem;
+  font-size: 2rem;
+  text-align: center;
   
-  html {
+}
+
+#orderDetailsContainer p{
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.order-table th {
+  background-color: #061c3d;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.order-table td {
+  font-size: 1.3rem;
+}
+
+.order-table td button{
+  font-size: 1.3rem;
+  width: 70%;
+  display: block;
+  margin: auto;
+  font-weight: 600;
+  border: 0;
+  background-color: #fd5b17;
+  color: white;
+  line-height: 40px;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+@media screen and (max-width: 600px) {
+  .invoice {
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  .order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+}
+
+.order-table th {
+  background-color: #061c3d;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.order-table td {
+  font-size: .8rem;
+}
+
+.order-table td button{
+  font-size: .8rem;
+  width: 95%;
+  
+}
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  .invoice {
+    width: 98%;
+    padding: 4rem;
+    margin: auto;
+    box-shadow: 0 0 10px #dedede;
+  }
+
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  .invoice {
+    width: 90%;
+    padding: 4rem;
+    margin: auto;
+    box-shadow: 0 0 10px #dedede;
+  }
+}
+
+
+
+/* footer */
+#servhead {
+  height: 20vh;
+  background: linear-gradient(rgba(8, 28, 61, 0.9),
+      rgba(8, 28, 61, 0.9)),
+    url("../../assets/images/heading.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: 5em;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  width: 100%;
+  padding: 2em;
+}
+
+.footer_text {
+  width: 80%;
+  font-size: 1.6rem;
+
+}
+
+.footer_icon {
+  width: 19%;
+  text-align: right;
+
+}
+
+@media screen and (max-width: 600px) {
+  #servhead {
+    height: 10vh;
+
+  }
+
+  .footer_text p {
     font-size: 10px;
   }
-  
-  
-  /* Google Fonts Import Link */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .nav_bar {
-    /* height: 100vh; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-    /* background: #c1f7f5; */
-  }
-  
-  .nav-links {
-    display: flex;
-    align-items: center;
-    background: rgb(8, 28, 61);
-    padding: 2rem 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .nav-links li {
-    list-style: none;
-    margin: 0 12px;
-  }
-  
-  .nav-links li a {
-    position: relative;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 500;
-    padding: 0.6rem 0;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .nav-links li a:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 0.3rem;
-    width: 0%;
-    background: #fd5b17;
-    border-radius: 1.2rem;
-    transition: all 0.4s ease;
-  }
-  
-  .nav-links li a:hover:before {
-    width: 100%;
-  }
-  
-  .nav-links li.center a:before {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .nav-links li.upward a:before {
-    width: 100%;
-    bottom: -0.5rem;
-    opacity: 0;
-  }
-  
-  .nav-links li.upward a:hover:before {
-    bottom: 0rem;
-    opacity: 1;
-  }
-  
-  
-  /* .horizontal-panel {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-      background-color: red;
-      padding: 1rem;
-  }
-  
-  .horizontal-panel a {
-      text-decoration: none;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 2rem;
-      text-decoration: none;
-  } */
-  
-  .main {
-    /* display: inline-block; */
-    top: 2rem;
-    width: auto;
-  
-  }
-  
-  .func-1 {
-    /* width: 100%; */
-    margin-bottom: 2rem;
-    height: 55rem;
-  
-  }
-  
-  .tab-content {
-    display: none;
-  }
-  
-  .tab-content.active-tab {
-    display: block;
-  }
-  
-  
-  
-  /* payment */
-  
-  *,
-  ::before,
-  ::after {
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* body{
-    font-family: 'Nunito', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.8;
-    color: #484848;
-    background-color: #f9f5f5;
-  } */
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  strong {
-    font-weight: 800;
-  }
-  
-  .container {
-    /* margin-top:. 5em; */
-    border-radius: 1.8em;
-    padding: 2em 2em;
-    background-color: white;
-  }
-  
-  header {
-    margin-bottom: 4em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .logo {
-    font-size: 2rem;
-  }
-  
-  .logo strong {
-    color: #fd5b17;
-  }
-  
-  header .time-left {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    line-height: 1.2;
-  }
-  
-  .payment,
-  .payment :where(form > div:not(.card-number), .card-expiration .input) {
-    display: flex;
-    align-items: center;
-  }
-  
-  .payment {
-    flex-direction: column-reverse;
-    gap: 4em;
-  }
-  
-  .payment form>div {
-    margin-bottom: 2.5em;
-    flex-direction: row;
-    align-items: stretch;
-  }
-  
-  .payment form>div:not(.card-number)>div {
-    flex: 1 0 50%;
-    margin: 0.5em 0;
-  }
-  
-  .payment .left p {
-    font-size: 1.7rem;
-    font-weight: 700;
-  }
-  
-  .payment .left span {
-    color: #a1a1a1;
-    font-size: 1.3rem;
-  }
-  
-  .payment .left input {
-    font-weight: 600;
-    font-size: 1.5rem;
-    padding: 0 1em;
-    line-height: 46px;
-    border-radius: 8px;
-    width: 100%;
-    border: 2px solid #a1a1a1;
-    outline-color: transparent;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-  }
-  
-  .payment .left input::placeholder {
-    font-weight: 300;
-    font-family: inherit;
-    letter-spacing: 2px;
-    color: #a1a1a1;
-    font-size: 1.3rem;
-    opacity: .5;
-  }
-  
-  .payment .left input:focus {
-    outline-color: #fd5b17;
-    background-color: #f5f5f5;
-  }
-  
-  .payment .card-number-box {
-    position: relative;
-    margin-top: 1em;
-  }
-  
-  .payment .card-number-box input {
-    padding: 0 4em;
-  }
-  
-  .payment .card-number-box input::placeholder {
-    font-size: inherit;
-  }
-  
-  .payment form .cc-logo {
-    position: absolute;
-    top: 50%;
-    left: 1.2em;
-    margin-top: -10px;
-  }
-  
-  .payment .cc-logo::before,
-  .payment .cc-logo::after {
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #e51212;
-  }
-  
-  .payment .cc-logo::after {
-    background-color: #f79e1c;
-    margin-left: -7px;
-    opacity: 0.75;
-  
-  }
-  
-  .payment .card-expiration .input {
-    gap: 10%;
-    text-align: center;
-  }
-  
-  .payment .card-expiration input {
-    text-align: center;
-  }
-  
-  .card-expiration strong {
-    font-size: 2rem;
-  }
-  
-  .payment form button {
-    font-size: 1.8rem;
-    font-weight: 600;
-    border: 0;
-    background-color: #fd5b17;
-    color: white;
-    line-height: 56px;
-    border-radius: 8px;
-    width: 100%;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-  }
-  
-  .payment form button:hover {
-    background-color: #e84f0e;
-  }
-  
-  
-  #brand {
-    font-weight: bolder;
-    font-size: 1.5rem;
-  }
-  
-  #brand span {
-    color: #fd5b17;
-  }
-  
-  
-  
-  
-  .payment .right {
-    max-width: 300px;
-    width: 100%;
-  }
-  
-  .payment .card-virtual {
-    position: relative;
-    margin: 0 2em .5em;
-    padding: 2em;
-    line-height: 2em;
-    font-size: larger;
-    font-weight: 600;
-    color: white;
-    background-color: #00122c;
-    border-radius: 10px;
-    box-shadow: rgb(43 45 66 / 30%) 0 20px 30px;
-    z-index: 1;
-    overflow: hidden;
-  }
-  
-  .payment .card-virtual .cc-logo {
-    position: relative;
-    transform: scale(5);
-    text-align: center;
-  }
-  
-  .payment .card-virtual .name-holder {
-    margin: 4em 0 0;
-  }
-  
-  .payment .chip {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin: 0 -1.5em -1.5em;
-    opacity: .5;
-  }
-  
-  .payment .chip img {
-    width: 30px;
-    margin-top: 0.5em;
-  }
-  
-  .payment .card-virtual .highlight {
-    position: relative;
-    height: auto;
-    margin: 2em -2em -2em;
-    background-color: #8d99ab;
-    border-radius: 0 0 10px 10px;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .payment .right .receipt {
-    position: relative;
-    padding: 2em 2em 2em;
-    border-radius: 10px;
-    background-color: aliceblue;
-    font-size: 1.2rem;
-  }
-  
-  .payment .right .receipt ul li {
-    display: flex;
-    justify-content: space-between;
-    line-height: 3em;
-    border-bottom: 2px solid #7a7a7a;
-  }
-  
-  .payment .right .receipt ul li span:first-child {
-    color: #a1a1a1;
-  }
-  
-  .payment .right .receipt ul li span:last-child {
-    font-weight: 700;
-  }
-  
-  .payment .right .receipt .total {
-    text-align: right;
-    margin-top: 1em;
-  }
-  
-  .payment .receipt .total .price {
-    font-size: 1.5em;
-  }
-  
-  
-  @media screen and (min-width: 576px) {
-    .outer {
-      padding: 4em;
-    }
-  
-    .payment form>div {
-      flex-direction: row;
-    }
-  
-    .payment form>div .text {
-      padding-right: 1em;
-    }
-  
-  }
-  
-  @media screen and (min-width: 992px) {
-    header {
-      max-width: 70%;
-      padding-right: 4em;
-      margin-bottom: 0;
-    }
-  
-    .payment {
-      flex-direction: row;
-      gap: 0;
-    }
-  
-    .payment .left {
-      flex: 1 0 65%;
-      padding-right: 4em;
-    }
-  
-    .payment .right {
-      flex: 1 0 35%;
-      align-self: flex-end;
-    }
-  
-  
-  }
-  
-  
-  /* Shipment */
-  
-  .title-div {
-    font-size: 2.2rem;
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .title-div span {
-    border-bottom: 4px solid #fd5b17;
-    display: inline-block;
-    padding-bottom: .5rem;
-  }
-  
-  .ship form>div {
-    margin-bottom: 2.5em;
-    flex-direction: row;
-    align-items: stretch;
-  }
-  
-  .ship,
-  .ship :where(form > div:not(.name)) {
-    display: flex;
-    align-items: center;
-  }
-  
-  
-  .ship form {
-    border-radius: 1rem;
-    box-shadow: 0 0 10px rgb(222, 222, 222);
-    padding: 4rem;
-  }
-  
-  .ship {
-    flex-direction: column-reverse;
-    gap: 4em;
-  }
-  
-  .ship form {
-    min-width: 70%;
-  }
-  
-  .ship form>div {
-    margin-bottom: 2.5em;
-    flex-direction: row;
-    align-items: stretch;
-  }
-  
-  .ship .name input {
-    width: 100%;
-  }
-  
-  .ship input::placeholder {
-    font-weight: 300;
-    font-family: inherit;
-    letter-spacing: 2px;
-    color: #a1a1a1;
-    font-size: 1.3rem;
-    opacity: .5;
-  }
-  
-  .ship form>div:not(.name)>div {
-    flex: 1 0 50%;
-    margin: 0.5em 0;
-  }
-  
-  .ship form .org-name {
-    margin-bottom: 1rem;
-  }
-  
-  .ship label {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: .5rem;
-  }
-  
-  .ship input {
-    font-weight: 600;
-    font-size: 1.8rem;
-    padding: 0 1em;
-    line-height: 46px;
-    border-radius: 8px;
-    width: 100%;
-    border: 2px solid #a1a1a1;
-    outline-color: transparent;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-  }
-  
-  .ship select {
-    font-weight: 600;
-    font-size: 1.8rem;
-    padding: 0 1em;
-    line-height: 46x;
-    border-radius: 8px;
-    width: 100%;
-    height: 5rem;
-    border: 2px solid #a1a1a1;
-    outline-color: transparent;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-  }
-  
-  .ship input:focus {
-    outline-color: #fd5b17;
-    background-color: #f5f5f5;
-  }
-  
-  .ship select:focus {
-    outline-color: #fd5b17;
-    background-color: #f5f5f5;
-  }
-  
-  .ship span {
-    color: #a1a1a1;
-    font-size: 1.3rem;
-  }
-  
-  .ship .button .submit,
-  .reset,
-  .proceed {
-    gap: 10%;
-    text-align: center;
-  }
-  
-  select {
-    height: 2rem;
-  }
-  
-  .ship form .button .submit,
-  .reset,
-  .proceed {
-    display: block;
-    width: auto;
-    font-size: 1.8rem;
-    width: 100%;
-  }
-  
-  .ship form .button button {
-    font-size: 1.8rem;
-    width: 98%;
-    font-weight: 600;
-    border: 0;
-    background-color: #fd5b17;
-    color: white;
-    line-height: 50px;
-    border-radius: 8px;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-  
-  }
-  
-  .proceed button {
-    font-size: 1.8rem;
-    width: 100%;
-    font-weight: 600;
-    border: 0;
-    background-color: #fd5b17;
-    color: white;
-    line-height: 50px;
-    border-radius: 8px;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-  }
-  
-  
-  
-  
-  
-  .order-card {
-    max-width: 70%;
-    border-radius: 1rem;
-    box-shadow: 0 0 10px #dedede;
-    padding: 3rem;
-    margin: auto;
-    margin-top: 1rem;
-    border-bottom: 4px solid #fd5b17;
-  }
-  
-  #orderCards h3 {
-    font-size: 1.9rem;
-    padding-bottom: .5rem;
-  }
-  
-  #orderCards strong {
-    font-weight: 600;
-  }
-  
-  #orderCards p {
-    padding-bottom: .5rem;
-    font-size: 1.3rem;
-  }
-  
-  #orderCards table {
-    min-width: 22rem;
-  }
-  
-  
-  /* invoice */
-  .invoice {
-    width: 80%;
-    padding: 4rem;
-    margin: auto;
-    box-shadow: 0 0 10px #dedede;
-  }
-  
-  #orderDetailsContainer :not(p){
-    text-align: center;
-    width: 100%;
-  }
-  
-  #orderDetailsContainer span{
-    font-weight: bolder;
-    border-bottom: 4px solid #fd5b17;
-    /* display: inline-block; */
-    padding-bottom: .5rem;
-    font-size: 2rem;
-    text-align: center;
-    
-  }
-  
-  #orderDetailsContainer p{
-    font-size: 1.3rem;
-    margin-top: 1rem;
-  }
-  
-  .order-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .order-table th,
-  .order-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  .order-table th {
-    background-color: #061c3d;
-    font-size: 1.6rem;
-    color: #fff;
-  }
-  
-  .order-table td {
-    font-size: 1.3rem;
-  }
-  
-  .order-table td button{
-    font-size: 1.3rem;
-    width: 70%;
-    display: block;
-    margin: auto;
-    font-weight: 600;
-    border: 0;
-    background-color: #fd5b17;
-    color: white;
-    line-height: 40px;
-    border-radius: 8px;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .invoice {
-      width: 100%;
-      padding: 1rem;
-      margin: auto;
-    }
-  
-    .order-table th,
-  .order-table td {
-    border: 1px solid #ddd;
-    padding: 5px;
-    text-align: left;
-  }
-  
-  .order-table th {
-    background-color: #061c3d;
-    font-size: 1rem;
-    color: #fff;
-  }
-  
-  .order-table td {
-    font-size: .8rem;
-  }
-  
-  .order-table td button{
-    font-size: .8rem;
-    width: 95%;
-    
-  }
-  
-  }
-  
-  @media screen and (max-width: 900px) and (min-width: 600px) {
-    .invoice {
-      width: 98%;
-      padding: 4rem;
-      margin: auto;
-      box-shadow: 0 0 10px #dedede;
-    }
-  
-  
-  }
-  
-  @media screen and (max-width: 1200px) and (min-width: 900px) {
-    .invoice {
-      width: 90%;
-      padding: 4rem;
-      margin: auto;
-      box-shadow: 0 0 10px #dedede;
-    }
-  }
-  
-  
-  
-  /* footer */
+
+  .footer_icon img {
+    width: 1em;
+  }
+
+
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
   #servhead {
-    height: 20vh;
-    background: linear-gradient(rgba(8, 28, 61, 0.9),
-        rgba(8, 28, 61, 0.9)),
-      url("../../assets/images/heading.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    margin-top: 5em;
-  
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    height: 12vh;
+
   }
-  
-  footer {
-    width: 100%;
-    padding: 2em;
+
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  #servhead {
+    height: 12vh;
+
   }
-  
-  .footer_text {
-    width: 80%;
-    font-size: 1.6rem;
-  
-  }
-  
-  .footer_icon {
-    width: 19%;
-    text-align: right;
-  
-  }
-  
-  @media screen and (max-width: 600px) {
-    #servhead {
-      height: 10vh;
-  
-    }
-  
-    .footer_text p {
-      font-size: 10px;
-    }
-  
-    .footer_icon img {
-      width: 1em;
-    }
-  
-  
-  
-  }
-  
-  @media screen and (max-width: 900px) and (min-width: 600px) {
-    #servhead {
-      height: 12vh;
-  
-    }
-  
-  
-  }
-  
-  @media screen and (max-width: 1200px) and (min-width: 900px) {
-    #servhead {
-      height: 12vh;
-  
-    }
-  }
+}
