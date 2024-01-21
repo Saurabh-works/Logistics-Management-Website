@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule , RoutingComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServicesComponent } from './services/services.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +12,7 @@ import { AdminComponent } from './admin/admin.component';
 import { WarehouseComponent } from './warehouse/warehouse.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LoginComponent } from './login/login.component';
     AdminComponent,
     WarehouseComponent,
     UserComponent,
-    LoginComponent
+    LoginComponent,
+    RoutingComponent,
   ],
   imports: [
     BrowserModule,
