@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Title Section*/
+#servhead{
+    height: 30vh;
+    background: linear-gradient(
+        rgba(8, 28, 61, 0.8),
+        rgba(8, 28, 61, 0.8)
+      ),
+      url("../../assets/images/heading.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+      
+}
+
+#servhead h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+}
+
+
+/* Our Competancy section */
+.div1 {
+    display: flex;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    margin-block: 6em;
+    margin-inline: 6em;
+}
+
+.heading1{
+    font-size: xx-large;
+}
+
+.p1{
+    margin: 2em;
+    text-align: justify
+}
+
+.p1:hover{
+    transform: translateY(-3px);
+    transition: 0.5s;
+}
+
+.img1{
+    width: 30%;
+    transform: skew(0deg, 8deg);
+    box-shadow: orangered -1em -1em ;
+    margin-inline: 2em;
+}
+
+.heading1 {
+    color: #FD5B17;
+}
+
+.heading1 span{
+    color: rgb(8, 28, 61);
+}
+
+
+/* Media Query section */
+@media screen and (max-width: 1400px) {
+    .div1{
+        flex-direction: row;
+        width: 90%;
+        margin-inline: 5em;
+    }
+    .img1{
+        width: 30%;
+        margin: auto;
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .div1{
+        flex-direction: row;
+        width: 95%;
+        margin-inline: 3em;
+    }
+    .img1{
+        width: 30%;
+        margin: auto;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .div1{
+        flex-direction: column;
+        width: 96%;
+        margin-inline: 2em;
+    }
+    .img1{
+        width: 30%;
+        margin: auto;
+
+    }
+    .teacher-sec-content{
+        display: block;
+        flex-wrap: wrap;
+        
+        justify-content: none;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .div1{
+        flex-direction: column;
+        width: 100%;
+        margin-inline: 0em;
+
+    }.img1{
+        width: 80%;
+        margin: auto;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .div1{
+        flex-direction: column;
+        width: 100%;
+        margin-inline: 0em;
+
+    }
+    .img1{
+        width: 80%;
+        margin-block: auto;
+    }
+    .teacher-sec-content{
+        display: block;
+        flex-direction: column;
+        justify-content: none;
+    }
+    
+}
+
+
+/* Mission Vision Values Section */
+.div5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.div6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.card{
+    border-radius: 10px;
+    margin-block: 3em;
+    
+    border: none;
+    text-align: center;
+}
+
+.card :hover{
+    transform: translateY(-1px);
+    transition: 0.5s;
+}
+
+.card-title{
+    color: #FD5B17;
+    text-align: center;
+}
+
+.card-text{
+    color: rgb(8, 28, 61);
+    text-align: justify;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.card_icon img{
+    width: 6em;
+}
+
+
+
+/* Our Team section */
+#teacher-sec {
+    margin-block: 5em;
+    margin-inline: 3em;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.teacher-sec-title{
+    color: #FD5B17;
+}
+
+.teacher-sec-title span{
+    color: rgb(8, 28, 61);
+}
+  
+.teacher-sec-title {
+    text-align: center;
+}
+
+.teacher-sec-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block: 4em;
+}
+
+.teacher-sec-name{
+    font-size: larger;
+    color: rgb(8, 28, 61);
+    
+}  
+
+.teacher-sec-text {
+    font-size: large;
+    color: rgb(17, 48, 98);
+}
+  
+.teacher-sec-box {
+    text-align: center;
+}
+  
+.teacher-sec-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.teacher-sec-photo img:hover {
+    box-shadow: 0px 0px 10px 4px rgb(255, 171, 25);
+    border: 2px solid rgb(197, 173, 129);
+}
+
+
+/* Marquee section */
+#marquee{
+    
+    height: 30vh;
+    background: linear-gradient(
+        rgba(8, 28, 61, 0.8),
+        rgba(8, 28, 61, 0.8)
+      ),
+      url("../../assets/images/heading.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;  
+}
+
+#marquee h1{
+font-size: 35px;
+color: white;
+text-align: center; 
+}
+
+
+/* footer */
+#servheadf{
+    height: 20vh;
+    background: linear-gradient(
+        rgba(8, 28, 61, 0.9),
+        rgba(8, 28, 61, 0.9)
+      ),
+      url("../../assets/images/heading.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 5em;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer{
+    width: 100%;
+    padding: 2em;
+  }
+
+  .footer_text{
+    width: 80%;
+
+  }
+  .footer_icon{
+    width: 19%;
+    text-align: right;
+
+  }
+
+  @media screen and (max-width: 600px) {
+    #servheadf{
+      height: 10vh;
+      
+    }
+    .footer_text p{
+      font-size: 10px;
+    }
+
+    .footer_icon img{
+      width: 1em;
+    }
+
+    
+    
+  }
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+    #servheadf{
+      height: 12vh;
+      
+    }
+    
+  
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  #servheadf{
+    height: 12vh;
+    
+  }
+
+}
+
+
+

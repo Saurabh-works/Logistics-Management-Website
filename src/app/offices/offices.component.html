@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>office</title>
+    <script src="src/scripts/offices.js"></script>
+    <script src="https://kit.fontawesome.com/3f4f8117ab.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="offices">
+        <div id="office-left">
+            <i class="fa-solid fa-list" style="color: #fd5b17;" id="close-btn" onclick="closeNav()"></i>
+            <div id="left-title" >QuatumCargo Network</div>
+            <div id="cities-name">
+                <p class="tab-links" onclick="opentab('m')">Mumbai</p>
+                <p class="tab-links" onclick="opentab('d')">Delhi</p>
+                <p class="tab-links" onclick="opentab('b')">Bengaluru</p>
+                <p class="tab-links" onclick="opentab('c')">Chennai</p>
+                <p class="tab-links" onclick="opentab('h')">Hyderabad</p>
+                <p class="tab-links" onclick="opentab('k')">Kolkata</p>
+            </div>
+        </div>
+
+        <div id="office-right">
+            <span><i class="fa-solid fa-list" style="color: #fd5b17;" id="open-btn" onclick="openNav()"></i></span>
+
+            <!-- Mumbai -->
+            <div class="cards tab-content active-tab" id="m">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_mumbai_office (1).jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Dispatch Nexus</span></h3>
+                            <h3 class="reduce-margin">Address : <span>draffer Avenue, Sonawala Rd, near Railway Station, Sonawala Rd, Sonawala Industry Estate,
+                                Goregaon, Mumbai, Maharashtra 400063.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_mumbai_2.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Global Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Corporate Plaza, LBS Road, near Metro Station,Opposite Innovation Plaza, near to json east,Sonawala Rd, Vikhroli West, Mumbai, Maharashtra 400079</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Delhi -->
+            <div class="cards tab-content " id="d">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_delhi.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Supply Nexus</span></h3>
+                            <h3 class="reduce-margin">Address : <span>QuantumCargo Business Center, City vista complex, Opposite Innovation Plaza, Mathura Road, near Railway Station, Jasola, New Delhi, Delhi 110025</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_delhi_1.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Distribution Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>new mid Square complex building, Ring Road,near to json east, near Metro Station, Opposite Innovation Plaza Rajouri Garden, New Delhi, Delhi 110027</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bengaluru -->
+            <div class="cards tab-content" id="b">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_benguluru.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Transport Center</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Tech boost, Star tower east, Old Madras Road, Opposite Innovation Plaza, near to json east, near IT Hub banguluru, KR Puram, Bengaluru, Karnataka 560036</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_banguluru_1.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Freight Bureau</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Business Avenue, front to Sai Multi- specialiest Hospital, Outer Ring Road, near Tech Park, Bellandur, Bengaluru, Karnataka 560103</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Chennai -->
+            <div class="cards tab-content" id="c">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_chennai.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Warehousing Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>MSD Park, OMR complex , near IT Park, Opposite Innovation Plaza, near to json east, New mahatma road  Sholinganallur, Chennai, Tamil Nadu 600119.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_chennai_1.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Dispatch Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Corporate Center, Musseum shodaw complex, Mount Poonamallee Road, near Metro Station, Porur, Chennai, Tamil Nadu 600116</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Hyderabad -->
+            <div class="cards tab-content" id="h">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_hydrabad.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Logistics Bureau</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Sultana Empire Plaza,New HITEC City,near to json east, Opposite Innovation Plaza, near Cyber Towers, East Madhapur, Hyderabad, Telangana 500081.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_hydrabad_1.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Logistics Bureau</span></h3>
+                            <h3 class="reduce-margin">Address : <span>New Sultana Complex, Corporate Junction, Gachibowli Road, Opposite Innovation Plaza, near IT Park, Gachibowli, Hyderabad, Telangana 500032.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Kolkata -->
+            <div class="cards tab-content" id="k">
+                <div class="card-main">
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_kolkata.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Logistics Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>QuantumCargo Business net, EM Bypass,near to json east, near Metro Station, Opposite Innovation Plaza Salt Lake City, Kolkata, West Bengal 700091.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                    <div class="card-main-content">
+                        <div class="card-img">
+                            <img src="../../assets/images/new_kolkata_1.jpg" alt="">
+                        </div>
+                        <div class="card-details">
+                            <h3 class="reduce-margin">Office Name: <span>Quantumcargo's Logistics Hub</span></h3>
+                            <h3 class="reduce-margin">Address : <span>Netaji Junction New Memorial Spot,Grate Ramji Road, near IT Park,near to json east, Gachibowli, Kolkata, West Bengal 700094.</span></h3>
+                            <h3 class="reduce-margin">Open From : <span>10Am - 7pm (Sat & Sun Off)</span></h3>
+                            <h3>Facilities: <span>Transportation Services, Inventory Management, Supply Chain Consultation, Customer Support, Warehousing and Distribution</span></h3>
+                            <button class="office-btn">contant us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer -->
+  <div class="container-fluid" id="servhead">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4" id="footer-content">
+        <div class="d-flex footer_text" >
+            <p class="mt-3">Copyright © 2024 <span style="color: #FD5B17;">Quantum Cargo</span></p>
+        </div>
+
+        <ul class="list-unstyled d-flex justify-content-end align-items-center footer_icon" >
+            <li class="ms-3"><a href="#"><img src="../../assets/images/twitter.png" width="24"></a>
+            </li>
+            <li class="ms-3"><a href="#"><img src="../../assets/images/instagram.png" width="24"></a>
+            </li>
+            <li class="ms-3"><a  href="#"><img src="../../assets/images/facebook.png" width="24"></a>
+            </li>
+        </ul>
+    </footer>
+</div>
+
+
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</body>
+
+</html>
