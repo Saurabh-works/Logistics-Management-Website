@@ -27,7 +27,13 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/scripts/offices.js",
+              "src/scripts/admin.js",
+              "src/scripts/warehouse.js",
+              "src/scripts/User.js",
+              "src/scripts/login.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -89,7 +95,13 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/scripts/offices.js",
+              "src/scripts/admin.js",
+              "src/scripts/warehouse.js",
+              "src/scripts/User.js",
+              "src/scripts/login.js"
+            ]
           }
         }
       }
