@@ -8,6 +8,7 @@ import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path:"", redirectTo: "/home" , pathMatch: "full"},
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:"news" , component:NewsComponent},
   {path:"contact" , component:ContactComponent},
   {path:"admin" , component:AdminComponent},
-  {path:"user" , component:UserComponent}
+  {path:"user" , component:UserComponent},
+  {path:"login" , component:LoginComponent}
   
 
 ];
@@ -28,4 +30,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { } export const
-RoutingComponent=[HomeComponent, AboutComponent,ServicesComponent,OfficesComponent,NewsComponent,ContactComponent,AdminComponent,UserComponent]
+RoutingComponent=[HomeComponent, AboutComponent,ServicesComponent,OfficesComponent,NewsComponent,ContactComponent,AdminComponent,UserComponent,LoginComponent]

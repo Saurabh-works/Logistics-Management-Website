@@ -1,15 +1,3 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-user',
-//   templateUrl: './user.component.html',
-//   styleUrls: ['./user.component.css']
-// })
-// export class UserComponent {
-
-// }
-
-
 import { Component } from '@angular/core';
 
 @Component({
@@ -18,11 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 
-
-// order.component.ts
-
-
 export class UserComponent {
+  title = 'frontend';
   orderNumber = this.generateOrderNumber();
   temporaryOrders: any[] = [];
   submitCount = 1;
@@ -100,6 +85,8 @@ export class UserComponent {
           <td><p>${totalPrice.toFixed(2)} Rs.</p></td>
         </tr>
       </table>
+
+      <hr style="border: 4px solid #fd4c00; ">
     `;
 
     this.submitCount++;
@@ -115,8 +102,16 @@ export class UserComponent {
     const orderDetailsContainer = document.getElementById('orderDetailsContainer');
     if (orderDetailsContainer) {
       orderDetailsContainer.innerHTML = `
-        <div><span>Order Details</span></div>
-        <p><strong>Order ID:</strong> ${this.orderNumber}</p>
+        <div style ="text-align: center;">
+        <span style = "font-weight: bolder;
+        border-bottom: 4px solid #fd5b17;
+        padding-bottom: .5rem;
+        font-size: 1.5rem;
+        text-align: center;">
+          Order Details
+        </span>
+        </div>
+        <p style = "margin-top: 10px;"><strong>Order ID:</strong> ${this.orderNumber}</p>
       `;
     }
   }
@@ -133,15 +128,41 @@ export class UserComponent {
       const orderTable = document.createElement('table');
       orderTable.classList.add('order-table');
 
+      orderTable.style.width = "100%";
+
       const tableHeader = document.createElement('thead');
+
+      tableHeader.style.backgroundColor =  "#061c3d";
+      tableHeader.style.color = "#fff";
+      tableHeader.style.fontSize = ".8rem";
+
       tableHeader.innerHTML = `
         <tr>
-          <th>Name of Organization</th>
-          <th>Email</th>
-          <th>Category</th>
-          <th>Arrival Date</th>
-          <th>Total Price</th>
-          <th>Tracking Order</th>
+          <th style="border: 2px solid #ddd; border-collapse: collapse; padding: 10px;">
+          
+          Name of Organization
+          
+          </th>
+          <th style="border: 2px solid #ddd; border-collapse: collapse; padding: 10px;">
+          
+          Category
+          
+          </th>
+          <th style="border: 2px solid #ddd; border-collapse: collapse; padding: 10px;">
+          
+          Arrival Date
+          
+          </th>
+          <th style="border: 2px solid #ddd; border-collapse: collapse; padding: 10px;">
+          
+          Total Price
+          
+          </th>
+          <th style="border: 2px solid #ddd; border-collapse: collapse; padding: 10px;">
+          
+          Tracking Order
+          
+          </th>
         </tr>
       `;
       orderTable.appendChild(tableHeader);
@@ -149,13 +170,49 @@ export class UserComponent {
       const tableBody = document.createElement('tbody');
       orders.forEach(order => {
         const row = document.createElement('tr');
+
+        row.style.fontSize = ".8rem";
+
         row.innerHTML = `
-          <td>${order.orgName}</td>
-          <td>${order.email}</td>
-          <td>${order.category}</td>
-          <td>${order.dateReceive}</td>
-          <td>$${order.totalPrice.toFixed(2)}</td>
-          <td><button>Status</button></td>
+          <td style="border: 2px solid #ddd; border-collapse: collapse; padding-left: 5px;">
+          
+          ${order.orgName}
+          
+          </td>
+          <td style="border: 2px solid #ddd; border-collapse: collapse; padding-left: 5px;">
+          
+          ${order.category}
+          
+          </td>
+          <td style="border: 2px solid #ddd; border-collapse: collapse; padding-left: 5px;">
+          
+          ${order.dateReceive}
+          
+          </td>
+          <td style="border: 2px solid #ddd; border-collapse: collapse; padding-left: 5px;">
+          
+          $${order.totalPrice.toFixed(2)}
+          
+          </td>
+          <td style="border: 2px solid #ddd; border-collapse: collapse;">
+          
+          <button style="font-size: .8rem;
+          min-width: 5rem;
+          display: block;
+          margin: 5px auto 5px;
+          border: 0;
+          background-color: #fd5b17;
+          color: white;
+          line-height: 30px;
+          border-radius: 8px;
+          -webkit-transition: all .3s ease-out;
+          transition: all .3s ease-out;">
+          
+          Status
+          
+          </button>
+          
+          </td>
         `;
         tableBody.appendChild(row);
       });
@@ -183,3 +240,5 @@ export class UserComponent {
     return Math.floor(100000 + Math.random() * 900000);
   }
 }
+
+

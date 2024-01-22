@@ -91,6 +91,7 @@ function calculatePrice() {
             <td><p>${totalPrice.toFixed(2)} Rs.</p></td>
         </tr>
     </table>
+    <hr>
     `;
 
     submitCount++;
@@ -119,12 +120,14 @@ function displayOrderTable(orders) {
   }
 
   const orderTable = document.createElement("table");
+  orderTable.id = 'table-new'
   orderTable.classList.add("order-table");
+  
 
   const tableHeader = document.createElement("thead");
   tableHeader.innerHTML = `
     <tr>
-      <th>Name of Organization</th>
+      <th style="background-color: #FD5B17;">Name of Organization</th>
       <th>Email</th>
       <th>Category</th>
       <th>Arrival Date</th>
