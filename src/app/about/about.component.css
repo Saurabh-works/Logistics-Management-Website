@@ -275,6 +275,9 @@ color: white;
 text-align: center; 
 }
 
+#marquee img{
+    margin-right: 10px;
+}
 
 /* footer */
 #servheadf{
