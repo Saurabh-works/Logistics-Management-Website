@@ -476,11 +476,7 @@ header .time-left {
   padding-bottom: .5rem;
 }
 
-.ship form>div {
-  margin-bottom: 2.5em;
-  flex-direction: row;
-  align-items: stretch;
-}
+
 
 .ship,
 .ship :where(form > div:not(.name)) {
@@ -505,7 +501,7 @@ header .time-left {
 }
 
 .ship form>div {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
   flex-direction: row;
   align-items: stretch;
 }
