@@ -4,17 +4,19 @@
   <head>
     <meta charset="UTF-8">
    <title> Transport </title> 
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
    </head>
 <body>
-  <script src="admin.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="admin.js"></script>
+
   <div class="nav_bar">
     <ul class="nav-links">
-        <li class="center"><a onclick="toggleContent('transport')">Transport</a></li>
+        <li class="center"><a onclick="toggleContent('transport') " >Transport</a></li>
+
         <li class="center"><a onclick="toggleContent('warehouse')">Warehouse</a></li>
         <li class="center" style="color: white;"><a href="#" onclick="opentab('div1')">Log Out</a></li>
       </ul>
@@ -24,9 +26,9 @@
     <div class="div1">
         <div class="nav_bar1">
           <ul class="nav-links">
-              <li class="center"><a  onclick="opentab('div1')">By Road</a></li>
-              <li class="center"><a  onclick="opentab('div2')">By Air</a></li>
-              <li class="center"><a  onclick="opentab('div3')"> By Ocean</a></li>
+              <li class="center"><a onclick="opentab('div1')">By Road</a></li>
+              <li class="center"><a onclick="opentab('div2')">By Air</a></li>
+              <li class="center"><a onclick="opentab('div3')"> By Ocean</a></li>
             </ul>
         </div>
       </div>
@@ -728,17 +730,21 @@
     
       </div>
 </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7b9bea35422e8bb787efaf213025f31eb480bb25
 <div id="warehouseContent" class="content">
     <div>
         <!-- Dropdown -->
         <li class="hov">Choose a Location
           <ul class="main2">
-            <li href="#" onclick="opentab('Pune')">Pune</li>
-            <li href="#" onclick="opentab('Mumbai')">Mumbai</li>
-            <li href="#" onclick="opentab('Dehli')">Dehli</li>
-            <li href="#" onclick="opentab('Bengaluru')">Bengaluru</li>
-            <li href="#" onclick="opentab('Chennai')">Chennai</li>
-            <li href="#" onclick="opentab('Hyderabad')">Hyderabad</li>
+            <li onclick="opentab('Pune')">Pune</li>
+            <li onclick="opentab('Mumbai')">Mumbai</li>
+            <li onclick="opentab('Dehli')">Dehli</li>
+            <li onclick="opentab('Bengaluru')">Bengaluru</li>
+            <li onclick="opentab('Chennai')">Chennai</li>
+            <li onclick="opentab('Hyderabad')">Hyderabad</li>
           </ul>
         </li>
       </div>

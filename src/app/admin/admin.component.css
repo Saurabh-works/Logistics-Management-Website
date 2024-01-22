@@ -6,7 +6,8 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.content{
+
+.content {
   display: none;
 }
 .nav_bar{
@@ -205,13 +206,13 @@ footer{
 
 /* Warehouse */
 
-.tab-content {
+/* .tab-content {
   display: none;
 }
 
 .tab-content.active-tab {
   display: block;
-} 
+}  */
 
 
 /* card */

@@ -4,9 +4,9 @@
   font-family: "poppins" sans-serif;
 }
 
-html {
+/* html {
   font-size: 10px;
-}
+} */
 
 
 /* Google Fonts Import Link */
@@ -20,19 +20,17 @@ html {
 }
 
 .nav_bar {
-  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
-  /* background: #c1f7f5; */
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   background: rgb(8, 28, 61);
-  padding: 2rem 1.5rem;
+  padding: 1rem .5rem;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -45,7 +43,7 @@ html {
 .nav-links li a {
   position: relative;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 0.6rem 0;
   text-decoration: none;
@@ -82,6 +80,14 @@ html {
 .nav-links li.upward a:hover:before {
   bottom: 0rem;
   opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .nav-links li a {
+    font-size: 1rem;
+
+  }
 }
 
 
@@ -166,14 +172,14 @@ strong {
 }
 
 header {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .logo strong {
@@ -199,7 +205,7 @@ header .time-left {
 }
 
 .payment form>div {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.8em;
   flex-direction: row;
   align-items: stretch;
 }
@@ -210,20 +216,20 @@ header .time-left {
 }
 
 .payment .left p {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 .payment .left span {
   color: #a1a1a1;
-  font-size: 1.3rem;
+  font-size: .8rem;
 }
 
 .payment .left input {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0 1em;
-  line-height: 46px;
+  line-height: 40px;
   border-radius: 8px;
   width: 100%;
   border: 2px solid #a1a1a1;
@@ -237,7 +243,7 @@ header .time-left {
   font-family: inherit;
   letter-spacing: 2px;
   color: #a1a1a1;
-  font-size: 1.3rem;
+  font-size: 1rem;
   opacity: .5;
 }
 
@@ -294,16 +300,16 @@ header .time-left {
 }
 
 .card-expiration strong {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .payment form button {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 600;
   border: 0;
   background-color: #fd5b17;
   color: white;
-  line-height: 56px;
+  line-height: 45px;
   border-radius: 8px;
   width: 100%;
   -webkit-transition: all .3s ease-out;
@@ -317,7 +323,7 @@ header .time-left {
 
 #brand {
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 #brand span {
@@ -337,7 +343,7 @@ header .time-left {
   margin: 0 2em .5em;
   padding: 2em;
   line-height: 2em;
-  font-size: larger;
+  font-size: 1rem;
   font-weight: 600;
   color: white;
   background-color: #00122c;
@@ -354,7 +360,7 @@ header .time-left {
 }
 
 .payment .card-virtual .name-holder {
-  margin: 4em 0 0;
+  margin: 3em 0 0;
 }
 
 .payment .chip {
@@ -386,7 +392,7 @@ header .time-left {
   padding: 2em 2em 2em;
   border-radius: 10px;
   background-color: aliceblue;
-  font-size: 1.2rem;
+  font-size: .8rem;
 }
 
 .payment .right .receipt ul li {
@@ -458,7 +464,7 @@ header .time-left {
 /* Shipment */
 
 .title-div {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   text-align: center;
   margin-bottom: 2rem;
@@ -470,11 +476,7 @@ header .time-left {
   padding-bottom: .5rem;
 }
 
-.ship form>div {
-  margin-bottom: 2.5em;
-  flex-direction: row;
-  align-items: stretch;
-}
+
 
 .ship,
 .ship :where(form > div:not(.name)) {
@@ -499,7 +501,7 @@ header .time-left {
 }
 
 .ship form>div {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
   flex-direction: row;
   align-items: stretch;
 }
@@ -513,13 +515,13 @@ header .time-left {
   font-family: inherit;
   letter-spacing: 2px;
   color: #a1a1a1;
-  font-size: 1.3rem;
+  font-size: .8rem;
   opacity: .5;
 }
 
 .ship form>div:not(.name)>div {
   flex: 1 0 50%;
-  margin: 0.5em 0;
+  margin: 0.2em 0;
 }
 
 .ship form .org-name {
@@ -527,14 +529,14 @@ header .time-left {
 }
 
 .ship label {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: .5rem;
+  /* margin-bottom: .2rem; */
 }
 
 .ship input {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   padding: 0 1em;
   line-height: 46px;
   border-radius: 8px;
@@ -547,12 +549,12 @@ header .time-left {
 
 .ship select {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   padding: 0 1em;
-  line-height: 46x;
+  /* line-height: 46x; */
   border-radius: 8px;
   width: 100%;
-  height: 5rem;
+  height: 3rem;
   border: 2px solid #a1a1a1;
   outline-color: transparent;
   -webkit-transition: all .3s ease-out;
@@ -571,7 +573,7 @@ header .time-left {
 
 .ship span {
   color: #a1a1a1;
-  font-size: 1.3rem;
+  font-size: .9rem;
 }
 
 .ship .button .submit,
@@ -582,7 +584,7 @@ header .time-left {
 }
 
 select {
-  height: 2rem;
+  height: 1.5rem;
 }
 
 .ship form .button .submit,
@@ -590,18 +592,18 @@ select {
 .proceed {
   display: block;
   width: auto;
-  font-size: 1.8rem;
+  font-size: 1rem;
   width: 100%;
 }
 
 .ship form .button button {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: 98%;
   font-weight: 600;
   border: 0;
   background-color: #fd5b17;
   color: white;
-  line-height: 50px;
+  line-height: 40px;
   border-radius: 8px;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
@@ -609,13 +611,13 @@ select {
 }
 
 .proceed button {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: 100%;
   font-weight: 600;
   border: 0;
   background-color: #fd5b17;
   color: white;
-  line-height: 50px;
+  line-height: 40px;
   border-radius: 8px;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
@@ -653,24 +655,34 @@ select {
   min-width: 22rem;
 }
 
+@media screen and (max-width: 600px) {
+  .order-card {
+    max-width: 100%;
+    border-radius: 1rem;
+    
+  }
+
+}
+
 
 /* invoice */
 .invoice {
-  width: 80%;
-  padding: 4rem;
+  width: 90%;
+  padding:2rem 4rem 4rem;
+
   margin: auto;
+  margin-top: 20px;
   box-shadow: 0 0 10px #dedede;
 }
 
-#orderDetailsContainer :not(p){
-  text-align: center;
+#orderDetailsContainer{
   width: 100%;
+
 }
 
 #orderDetailsContainer span{
   font-weight: bolder;
   border-bottom: 4px solid #fd5b17;
-  /* display: inline-block; */
   padding-bottom: .5rem;
   font-size: 2rem;
   text-align: center;
@@ -682,7 +694,21 @@ select {
   margin-top: 1rem;
 }
 
-.order-table {
+
+
+#table-new{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#table-new th, #table-new td{
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* .order-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
@@ -693,7 +719,7 @@ select {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: left;
-}
+} */
 
 .order-table th {
   background-color: #061c3d;
@@ -727,24 +753,21 @@ select {
     margin: auto;
   }
 
-  .order-table th,
-.order-table td {
-  border: 1px solid #ddd;
-  padding: 5px;
-  text-align: left;
+  #orderTableContainer {
+  width: 100%;
 }
 
-.order-table th {
+#orderTableContainer th {
   background-color: #061c3d;
   font-size: 1rem;
   color: #fff;
 }
 
-.order-table td {
+#orderTableContainer td {
   font-size: .8rem;
 }
 
-.order-table td button{
+#orderTableContainer td button{
   font-size: .8rem;
   width: 95%;
   
@@ -798,7 +821,7 @@ footer {
 
 .footer_text {
   width: 80%;
-  font-size: 1.6rem;
+  font-size: 1rem;
 
 }
 
