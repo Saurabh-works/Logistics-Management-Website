@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {path:"", redirectTo: "/home" , pathMatch: "full"},
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path:"contact" , component:ContactComponent},
   {path:"admin" , component:AdminComponent},
   {path:"user" , component:UserComponent},
-  {path:"login" , component:LoginComponent}
+  {path:"login" , component:LoginComponent},
+  {path: "signup", component: SignupComponent}
   
 
 ];
@@ -30,4 +32,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { } export const
-RoutingComponent=[HomeComponent, AboutComponent,ServicesComponent,OfficesComponent,NewsComponent,ContactComponent,AdminComponent,UserComponent,LoginComponent]
+RoutingComponent=[HomeComponent, AboutComponent,ServicesComponent,OfficesComponent,NewsComponent,ContactComponent,AdminComponent,UserComponent,LoginComponent, SignupComponent]

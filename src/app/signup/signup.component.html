@@ -1,0 +1,32 @@
+<!-- signup.component.html -->
+<div class="outer">
+  <div class="signup-form">
+    <span><strong>Sign Up</strong></span>
+
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="name" />
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="email" />
+    </div>
+    <div>
+      <label for="role">Role:</label>
+      <select id="role" [(ngModel)]="role">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password" />
+    </div>
+    <div>
+      <button (click)="onSubmit()">Sign Up</button>
+    </div>
+    <div>
+      <p>Already have an account? <a routerLink="/login">Sign in</a></p>
+    </div>
+  </div>
+</div>
