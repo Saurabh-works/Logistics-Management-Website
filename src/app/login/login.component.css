@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #cdcdcd;
+  margin-top: 2rem;
+  color: #515151;
+
+}
+
+.login-form span{
+  font-size: 1.8rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+.login-form strong{
+  border-bottom: 4px solid #fd5b17;
+  padding-bottom: .3rem;
+
+}
+.login-form div{
+  /* display: flex;
+  flex-direction: column; */
+  padding-bottom: 1rem;
+}
+.login-form label{
+  display: block;
+  color: #515151;
+  font-size: 1.2rem;
+}
+
+.login-form input, select{
+  display: block;
+  color: #515151;
+  line-height: 35px;
+  padding-left: 1rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #a1a1a1;
+}
+.login-form select{
+  height: 2.5rem;
+}
+
+.login-form input:focus, select:focus {
+  outline-color: #fd5b17;
+  background-color: #f5f5f5;
+}
+
+.login-form button{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background-color: #fd5b17;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  line-height: 35px;
+}
+
+.login-form a{
+  color: #fd5b17;
+}
+
+
+
+
+
+/* footer */
+#servhead {
+  height: 20vh;
+  background: linear-gradient(rgba(8, 28, 61, 0.9),
+      rgba(8, 28, 61, 0.9)),
+    url("../../assets/images/heading.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: 5em;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  width: 100%;
+  padding: 2em;
+}
+
+.footer_text {
+  width: 80%;
+
+}
+
+.footer_icon {
+  width: 19%;
+  text-align: right;
+
+}
+
+@media screen and (max-width: 600px) {
+  #servhead {
+    height: 10vh;
+
+  }
+
+  .footer_text p {
+    font-size: 10px;
+  }
+
+  .footer_icon img {
+    width: 1em;
+  }
+
+
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  #servhead {
+    height: 12vh;
+
+  }
+
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  #servhead {
+    height: 12vh;
+
+  }
+
+}
+
+
+.navbar-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #333;
+}
