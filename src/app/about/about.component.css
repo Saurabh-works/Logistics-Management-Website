@@ -51,9 +51,9 @@
 }
 
 .img1{
-    width: 30%;
-    transform: skew(0deg, 8deg);
-    box-shadow: orangered -1em -1em ;
+    width: 25%;
+    /* transform: skew(0deg, 8deg); */
+    box-shadow: #FD5B17 -0.5em -0.5em  ;
     margin-inline: 2em;
 }
 
