@@ -39,6 +39,7 @@ body {
 .home1 .btn {
   background-color: #FD5B17;
   color: #FFFFFF;
+  margin-top: 1rem;
 }
 
 .home1 h1 {
@@ -144,6 +145,10 @@ body {
   width: 49%;
   padding: 0em 4em;
   text-align: justify;
+}
+
+.after-home-text div {
+  margin-top: 1rem;
 }
 
 .after-home-text h4 {
