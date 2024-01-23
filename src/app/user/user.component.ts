@@ -191,7 +191,7 @@ export class UserComponent {
           </td>
           <td style="border: 2px solid #ddd; border-collapse: collapse; padding-left: 5px;">
           
-          $${order.totalPrice.toFixed(2)}
+          ${order.totalPrice.toFixed(2)} Rs.
           
           </td>
           <td style="border: 2px solid #ddd; border-collapse: collapse;">
